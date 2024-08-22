@@ -10,8 +10,10 @@
 
     * Serveur De fichier
         * Système de sauvegarde
+            * relier au système de stockage 
         * Système de stockage
         * Debian 11 
+            * Samba 
 
     * Serveur de Base de donnée
     
@@ -38,4 +40,5 @@
     * 4 Imprimante 
 
 ## Securitée
+
 
