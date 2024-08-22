@@ -11,6 +11,7 @@
     * Serveur De fichier
         * Système de sauvegarde
         * Système de stockage
+        * Debian 11 
 
     * Serveur de Base de donnée
     
@@ -37,6 +38,4 @@
     * 4 Imprimante 
 
 ## Securitée
-
-
 
