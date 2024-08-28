@@ -40,6 +40,7 @@
         * Port 4 ouvert  
     * 1 Nuck
         * AIF-101100 
+        * si on arrive pas à se connecter au domaine il faut mettre une IP fixe 
         
         
 * Fictif
