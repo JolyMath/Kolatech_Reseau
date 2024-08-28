@@ -3,6 +3,11 @@
 ## Configuration 
 
 * **Hyperviseur PROXMOX**
+    * Que faire si on arrive pas à se connecter 
+       * regarder si les 2 cartes réseau de VMware et celui de virtual box n'a pas une IP 192.168.1
+       * Vérifier que le cable est bien brancher au switch 
+       * Vérifier que le serveur DHCP est bien allumé 
+         * changer l'IP de la carte ethernet en IP fixe 
     * Domaine contrôleur 
         * AD
         * DNS
