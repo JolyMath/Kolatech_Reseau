@@ -3,6 +3,10 @@
 ## Configuration 
 
 * **Hyperviseur PROXMOX**
+    * information
+      * nom : root
+      * mot de passe : Admlocal1
+      * IP : 192.168.1.2:8006
     * Que faire si on arrive pas à se connecter 
        * regarder si les 2 cartes réseau de VMware et celui de virtual box n'a pas une IP 192.168.1
        * Vérifier que le cable est bien brancher au switch 
@@ -36,6 +40,7 @@
         * Port 4 ouvert  
     * 1 Nuck
         * AIF-101100 
+        
         
 * Fictif
     * 40 PC 
