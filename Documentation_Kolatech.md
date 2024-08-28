@@ -8,6 +8,7 @@
        * Vérifier que le cable est bien brancher au switch 
        * Vérifier que le serveur DHCP est bien allumé 
          * changer l'IP de la carte ethernet en IP fixe 
+        * Appeler macéo  
     * Domaine contrôleur 
         * AD
         * DNS
