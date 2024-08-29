@@ -27,8 +27,9 @@
 ## Matériel 
 
 * Emprunté
-    * 1 Machine
+    * 2 Machine
         * AIF-101303 
+        * AIF-101305
     * 1 Switch 
          * AIF-100811-014
          * VLAN
