@@ -10,30 +10,32 @@
         * DHCP 
 
     * Serveur De fichier
-        * Système de sauvegarde
-            * relier au système de stockage 
-        * Système de stockage
-        * Debian 11 
-            * Samba 
+        * Unraid
+            *  Système de sauvegarde
+            * Système de stockage
 
     * Serveur de Base de donnée
     
 ## Matériel 
 
 * Emprunté
-    * 1 Machine
+    * 2 Machine
         * AIF-101303 
+        * AIF-101305
     * 1 Switch 
          * AIF-100811-014
          * VLAN
-    * 1 Multi-prise
+    * 2 Multi-prise
          * AIF-MP-08
+         * AIF-MP-09
     * 1 routeur
         * No VLAN
         * AIF-SWT-08
         * Port 4 ouvert  
     * 1 Nuck
         * AIF-101100 
+    * 1 HDD Externe 
+        * AIF-HDD-14
         
 * Fictif
     * 40 PC 
