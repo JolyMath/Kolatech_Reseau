@@ -3,18 +3,26 @@
 
 ## Configuration 
 
-* **Hyperviseur PROXMOX**
-    * Domaine contrôleur 
-        * AD
-        * DNS
-        * DHCP 
+* **NAS TRUENAS**
+    * IP : 192.168.1.5
+    *  Système de sauvegarde
+    * Système de stockage
+        * 2 disque en mirroirs 
+        * Partage SMTP
+        * Mapper et accèssible pas tous user ad
+    
 
-    * Serveur De fichier
-        * Unraid
-            *  Système de sauvegarde
-            * Système de stockage
-
+* **Hyperviseur PROXMOX SERVEUR**
+    * IP : 192.168.1.2
+    * Win Serveur 2022 
+        * IP : 192.168.1.3
+        * AD, DHCP, DNS
     * Serveur de Base de donnée
+
+* **Hyperviseur PROXMOX Client**
+    * 192.168.1.6
+    * Client WIN11 
+
     
 ## Matériel 
 
@@ -33,7 +41,7 @@
         * AIF-SWT-08
         * Port 4 ouvert  
     * 1 Nuck
-        * AIF-101100 
+        * AIF-101098
     * 1 HDD Externe 
         * AIF-HDD-14
         
@@ -43,5 +51,4 @@
     * 4 Imprimante 
 
 ## Securitée
-
 
