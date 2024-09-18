@@ -16,17 +16,18 @@
          * changer l'IP de la carte ethernet en IP fixe 
         * Appeler macéo  
 
-    * Domaine contrôleur 
-        * AD
-        * DNS
-        * DHCP 
-
     * Serveur De fichier
         * Système de sauvegarde
         * Système de stockage
    
    * Serveur ADDS DNS DHCP
      * Admin : Administrateur
+     * ip : 192.168.1.3
+     * masque : 255.255.254.0
+     * Domaine contrôleur 
+        * AD
+        * DNS
+        * DHCP 
      
    
    * Serveur VPN
@@ -43,27 +44,42 @@
    * Serveur de Base de donnée
     
 ## Matériel 
+* pc mathys 
+  * IP Wifi : 192.168.1.12
+
 
 * Emprunté
     * 2 Machine
         * AIF-101303 
         * AIF-101305
-    * 1 Switch 
+    * 2 Switch 
+         * ip : 192.168.0.13
+         * ip : 192.168.0.12
+         * AIF-100948-030
          * AIF-100811-014
          * VLAN
+         * nom d'utilisateur : cisco 
     * 1 Multi-prise
          * AIF-MP-08
     * 1 routeur
         * No VLAN
         * AIF-SWT-08
-        * Port 4 ouvert  
-    * 1 Nuc
+        * Port 4 ouvert
+        * IP : 192.168.1.1  
+    * 3 Nuc
+        * IP macéo : 192.168.1.34
+        * IP mathys : 192.168.0.17 
         * Hyperviseur Proxmox 
           * Compte utilisateur Macéo (W11)
-          * Compte utilisateur Mathys (W11)
+            * Compte Admin_macéo 
+          * Compte utiisateur Mathys (W11)
+            * Compte Admin_mathys
           * Compte utilisateur Olivia (W11)
+            * Compte Admin_olivia
         * Nom d'admin = Kolatech
         * AIF-101100 
+        * AIF-101016
+        * AIF-101097
         * si on arrive pas à se connecter au domaine il faut mettre une IP fixe 
         
         
