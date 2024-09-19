@@ -8,6 +8,18 @@
       * nom : root
       * mot de passe : Admlocal1
       * IP : 192.168.1.2:8006
+    
+    * Que doit on faire pour pouvoir supprimer une OU 
+      * Activer l'affichage de fonctionnalités avancées 
+      * Faire un clique droit puis propriété sur l'OU souhaité
+      * allez sur l'onglet objet 
+      * décocher l'option protégé l'objet des suppressions accidentées
+
+    * Comment activé la corbeille sur l'active directory 
+      * il faut aller sur le centre d'administration de l'active directory 
+      * il faut faire un clique droit sur le contrôleur de domaine souhaité puis presser sur activer la corbeille
+      * maintenant quand vous effacerez un utilisateur, un groupe, une OU vous pourrez les restaurés dans la corbeille 
+ 
 
     * Que faire si on arrive pas à se connecter 
        * regarder si les 2 cartes réseau de VMware et celui de virtual box n'a pas une IP 192.168.1
@@ -16,13 +28,15 @@
          * changer l'IP de la carte ethernet en IP fixe 
         * Appeler macéo  
 
-    * Serveur De fichier
+    * Serveur De fichier Trunas
+        * IP : 192.168.1.5
+        * Nom d'utilisateur : admin
         * Système de sauvegarde
         * Système de stockage
    
    * Serveur ADDS DNS DHCP
      * Admin : Administrateur
-     * ip : 192.168.1.3
+     * IP : 192.168.1.3
      * masque : 255.255.254.0
      * Domaine contrôleur 
         * AD
@@ -53,8 +67,8 @@
         * AIF-101303 
         * AIF-101305
     * 2 Switch 
-         * ip : 192.168.0.13
-         * ip : 192.168.0.12
+         * IP : 192.168.0.13
+         * IP : 192.168.0.12
          * AIF-100948-030
          * AIF-100811-014
          * VLAN
@@ -68,8 +82,7 @@
         * IP : 192.168.1.1  
     * 3 Nuc
         * IP macéo : 192.168.1.34
-        * IP mathys : 192.168.0.17 
-        * Hyperviseur Proxmox 
+        * IP mathys : 192.168.0.17
           * Compte utilisateur Macéo (W11)
             * Compte Admin_macéo 
           * Compte utiisateur Mathys (W11)
