@@ -13,6 +13,10 @@
         * Système de stockage
 
     * Serveur de Base de donnée
+
+    * Serveur OpenSense
+        * IP: 192.168.1.254
+        * Admin : root
     
 ## Matériel 
 
