@@ -52,8 +52,8 @@
         * Admin : root
         * Installation : OpenSense    
 
-    * ### **Serveur De fichier Trunas**
-        * IP : 192.168.1.5
+* ### **Serveur De fichier Trunas**
+     * IP : 192.168.1.5
         *  Système de sauvegarde
         * Système de stockage
             * 3 disque en RAID1 virtuel  
@@ -61,10 +61,12 @@
             * Mapper et accèssible pas tous user ad
         * Base de donnée MARIADB
             * 192.168.1.4
-   
+
+   * **Superviseur réseau Zabbix**
+      * Admin : Admin
+      * IP : 192.168.1.4
+    
    * Serveur Web
-   * Superviseur réseau
-   * Serveur de Base de donnée
     
 ## Matériel 
 
@@ -74,13 +76,8 @@
         * Hyperviseur Proxmox : AIF-101303 
         * Trunas : AIF-101305
 
-    * 2 Switchs
-        * Admin : cisco 
-        * AIF-100948-030
-            * IP : 192.168.0.2
-        * AIF-100811-014
-            * IP :  192.168.0.1
-        * VLAN
+    * 1 switch
+      * Catalyst 2960 series Poe-2024
 
     * 1 Routeur
         * AIF-SWT-03
