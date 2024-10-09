@@ -78,6 +78,7 @@
 
     * 1 switch
       * Catalyst 2960 series Poe-2024
+      * IP : 192.168.0.1
 
     * 1 Routeur
         * AIF-SWT-03
