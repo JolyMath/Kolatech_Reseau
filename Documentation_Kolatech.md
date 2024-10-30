@@ -19,7 +19,7 @@
       * il faut aller sur le centre d'administration de l'active directory 
       * il faut faire un clique droit sur le contrôleur de domaine souhaité puis presser sur activer la corbeille
       * maintenant quand vous effacerez un utilisateur, un groupe, une OU vous pourrez les restaurés dans la corbeille 
- 
+
 
     * Que faire si on arrive pas à se connecter 
        * regarder si les 2 cartes réseau de VMware et celui de virtual box n'a pas une IP 192.168.1
@@ -35,6 +35,7 @@
         * Système de stockage
    
    * Serveur ADDS DNS DHCP
+     * Attention si le client et le serveur sont décalés de 5 min sur l'horair la connexion ne se fait pas
      * Admin : Administrateur
      * IP : 192.168.1.3
      * masque : 255.255.254.0
@@ -95,6 +96,10 @@
         * AIF-101097
         * si on arrive pas à se connecter au domaine il faut mettre une IP fixe 
         
+    * 3 souris 
+      * AIF-sou-05
+      * AIF-sou-06
+      * AIF-sou-07
         
 * Fictif
     * 40 PC 
