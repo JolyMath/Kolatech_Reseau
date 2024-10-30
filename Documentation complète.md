@@ -98,7 +98,12 @@
                     * Compte Admin_macéo 
             * Nom d'admin = Kolatech
 
-            * Si on arrive pas à se connecter au domaine il faut mettre une IP fixe 
+            * Si on arrive pas à se connecter au domaine il faut mettre une IP fixe
+         
+      * 3 souris
+         * AIF-SOU-05
+         * AIF-SOU-06
+         * AIF-SOU-07 
         
 * ### **Fictifs**
 
