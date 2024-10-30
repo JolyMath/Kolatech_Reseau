@@ -37,7 +37,8 @@
                     3. allez sur l'onglet objet 
                     4. décocher l'option protégé l'objet des suppressions accidentées     
             * DNS
-            * DHCP  
+            * DHCP
+            * ATTENTION si le client et le serveur sont décalés de 5 min sur l'horaire la connexion ne se fait pas !
         * Services d'impressions
         * Services de fichiers et de stockage    
 
