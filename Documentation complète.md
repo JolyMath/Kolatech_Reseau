@@ -1,10 +1,21 @@
-# **KOLATECH** 
-
-## Configuration 
+# **KOLATECH**
+ * Préparation
+   * Nom de l'entreprise : Kolatech
+   * Nombre d'employés : 50 employés
+   * Départements
+      * Direction
+           * RH
+           * Administration
+           * Recherche et Développement
+           * Marketing
+           * Juridique
+           * Finance
+## Configuration
 
 * ### **Hyperviseur PROXMOX**
 
-    * information
+    * Informations
+      * AIF-101303 
       * Nom : root
       * Mot de passe : Admlocal1
       * IP : 192.168.1.2:8006
@@ -89,9 +100,8 @@
       * IP : 192.168.0.1
 
     * 1 Routeur
-        * AIF-SWT-03
+      * AIF-SWT-03
             * IP : 192.168.1.1
-        * No VLAN
 
     * 3 Nucs
         * 3 Connexions simultanées (chacun peut être sur le serveur AD/ DNS / DHCP)
