@@ -66,7 +66,10 @@
    * **Superviseur réseau Zabbix**
       * Admin : Admin
       * IP : 192.168.1.4
-    
+   * **Switch Cisco**
+      * admin : admin ou root
+      * IP : 192.168.0.1   
+   
    * Serveur Web
     
 ## Matériel 
