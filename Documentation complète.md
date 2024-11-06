@@ -1,32 +1,33 @@
 # **KOLATECH**
- * Préparation
-   * Nom de l'entreprise : Kolatech
-   * Nombre d'employés : 50 employés
-   * Départements
-      * Direction
-           * RH
-           * Administration
-           * Recherche et Développement
-           * Marketing
-           * Juridique
-           * Finance
-## Configuration
+   
+* **Présentation de l'entreprise**
 
-* ### **Hyperviseur PROXMOX**
+     * Nom de l'entreprise : Kolatech
+     * Nombre d'employés : 50
 
-    * Informations
-      * AIF-101303 
-      * Nom : root
-      * Mot de passe : Admlocal1
-      * IP : 192.168.1.2:8006
+     * Départements
+        * Direction
+        * RH
+        * Administration
+        * Recherche et Développement
+        * Marketing
+        * Juridique
+        * Finance
+
+## Matériel Emprunté et Configuration
+
+* ### **Serveur Hyperviseur PROXMOX**
+
+    * Numéro se série : AIF-101303
+    * Nom : root
+    * IP : 192.168.1.2
     
     * Que faire si on arrive pas à se connecter a Proxmox ?
 
         * Regarder si les 2 cartes réseau de VMware et celui de Virtual Box n'a pas une IP 192.168.1
         * Vérifier que le cable est bien brancher au switch 
         * Vérifier que le serveur DHCP est bien allumé 
-        * Changer l'IP de la carte ethernet en IP fixe 
-        * Appeler Macéo
+        * Changer l'IP de la carte ethernet en IP fixe (sur notre poste)
 
     * **Serveur ADDS/ DNS/ DHCP**
         * Admin : Administrateur
@@ -34,7 +35,6 @@
         * masque : 255.255.254.0
         * Domaine contrôleur 
             * AD
-
                 * Comment activé la corbeille sur l'active directory ? 
 
                     1. Il faut aller sur le centre d'administration de l'active directory 
@@ -49,81 +49,76 @@
                     4. décocher l'option protégé l'objet des suppressions accidentées     
             * DNS
             * DHCP
-            * ATTENTION si le client et le serveur sont décalés de 5 min sur l'horaire la connexion ne se fait pas !
-        * Services d'impressions
-        * Services de fichiers et de stockage    
+            * **ATTENTION si le client et le serveur sont décalés de 5 min sur l'horaire la connexion ne se fait pas !**  
 
     * **Serveur VPN**
+        * Non d'utilisateur Ubuntu : Proxmox
         * IP : 192.168.1.7
         * Admin : openvpn
-        * Installation : Ubuntu 22.04.3
-        * Non d'utilisateur Ubuntu : Proxmox
+        * Installation : Ubuntu
 
     * **Serveur Firewall**
         * IP : 192.168.1.254
         * Admin : root
-        * Installation : OpenSense    
+        * Installation : OpenSense
 
-* ### **Serveur De fichier Trunas**
-     * IP : 192.168.1.5
-        *  Système de sauvegarde
-        * Système de stockage
-            * 3 disque en RAID1 virtuel  
-            * Partage SMTP
-            * Mapper et accèssible pas tous user ad
-        * Base de donnée MARIADB
-            * 192.168.1.4
+    * **Serveur téléphonique**
+        * Admin : root
+        * IP : 192.168.1.12   
+
+* ### **Serveur De Fichiers Trunas**
+
+    * Numéro de série : AIF-101305
+    * Admin : admin
+    * IP : 192.168.1.5
+    * Système de sauvegarde
+    * Système de stockage
+        * 3 disque en RAID1 virtuel  
+        * Partage SMTP
+        * Mapper et accessible pas tous user AD
 
    * **Superviseur réseau Zabbix**
       * Admin : Admin
       * IP : 192.168.1.4
-   * **Switch Cisco**
-      * admin : admin ou root
-      * IP : 192.168.0.1
-    
-   * **Serveur téléphonique**
-      * admin : root
-      * IP : 192.168.1.12  
    
-   * Serveur Web
+* ### **Serveur De Backups**
+    * Numéro de série : AIF-101005
+    * IP : 192.168.0.21
+    * Installation Windows Server 2022
+
+* #### **3 Nucs**
+    * Installation Windows 11
+    * 3 Connexions simultanées (chacun peut être sur le serveur AD/ DNS / DHCP)
+        * AIF-101098 (PC Mathys)
+            * Compte Admin_mathys 
+        * AIF-101016 (PC Olivia)
+            * Compte Admin_olivia     
+        * AIF-101097 (PC Macéo)
+            * Compte Admin_macéo
+
+*  #### **3 souris filaires**
+    * AIF-SOU-05
+    * AIF-SOU-06
+    * AIF-SOU-07            
+
+* ### **Matériel Réseau Emprunté**
+
+* **Switch Cisco**
+    * Numéro de série : Catalyst 2960 series Poe-2024
+    * Admin : admin ou root
+    * IP : 192.168.0.1
+
+* **1 Routeur**
+    * Numéro de série : AIF-SWT-03
+    * IP : 192.168.1.1
     
-## Matériel 
+* **11 câbles RJ45**
 
-* ### **Emprunté**
+* **2 Multiprises**
 
-    * 2 Machines
-        * Hyperviseur Proxmox : AIF-101303 
-        * Trunas : AIF-101305
-
-    * 1 switch
-      * Catalyst 2960 series Poe-2024
-      * IP : 192.168.0.1
-
-    * 1 Routeur
-      * AIF-SWT-03
-            * IP : 192.168.1.1
-
-    * 3 Nucs
-        * 3 Connexions simultanées (chacun peut être sur le serveur AD/ DNS / DHCP)
-            * AIF-101098 (PC Mathys)
-                * Compte utiisateur Mathys (W11)
-                    * Compte Admin_mathys 
-            * AIF-101016 (PC Olivia)
-                * Compte utilisateur Olivia (W11)
-                    * Compte Admin_olivia     
-            * AIF-101097 (PC Macéo)
-                * Compte utilisateur Macéo (W11)
-                    * Compte Admin_macéo 
-            * Nom d'admin = Kolatech
-
-            * Si on arrive pas à se connecter au domaine il faut mettre une IP fixe
-         
-      * 3 souris
-         * AIF-SOU-05
-         * AIF-SOU-06
-         * AIF-SOU-07 
+* **1 rallonge**
         
-* ### **Fictifs**
+* ### **Matériel Fictifs**
 
     * 40 ordinateurs
     * 3 PC portable 
@@ -192,4 +187,3 @@ Windows offre une stratégie de groupe intégrée pour désactiver l'accès au P
 6. **Forcer la mise à jour des GPO sur les postes clients** :
    - Exécutez `gpupdate /force` ou attendez l'application automatique.
 ```
-    
