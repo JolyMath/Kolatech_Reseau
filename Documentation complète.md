@@ -95,6 +95,9 @@
             * Compte Admin_olivia     
         * AIF-101097 (PC Macéo)
             * Compte Admin_macéo
+         
+* #### **NAS**
+    * TR-002    
 
 *  #### **3 souris filaires**
     * AIF-SOU-05
@@ -124,7 +127,7 @@
     * 3 PC portable 
     * 3 Imprimantes 
 
-## Securitée
+## Sécuritée
 * ### **Mise en place GPO et Règle de mot de passe**
 
 ### 1. Gestion des utilisateurs
