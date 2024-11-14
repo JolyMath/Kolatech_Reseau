@@ -82,9 +82,8 @@
       * IP : 192.168.1.4
    
 * ### **Serveur De Backups**
-    * Numéro de série : AIF-101005
-    * IP : 192.168.1.8
-    * Installation Windows Server 2022
+    * Numéro de série : AIF-101308
+    * IP :
 
 * #### **3 Nucs**
     * Installation Windows 11
