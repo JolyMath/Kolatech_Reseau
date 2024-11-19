@@ -83,7 +83,7 @@
    
 * ### **Serveur De Backups**
     * Numéro de série : AIF-101308
-    * IP :
+    * IP : 192.168.0.8
 
 * #### **3 Nucs**
     * Installation Windows 11
